@@ -1,0 +1,14 @@
+name: Hello World CI
+
+on: [push]
+
+jobs:
+  say_hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hello step
+        run: echo "Hello from Aitemir"
+
+      - name: Show operating system
+        run: uname -a
